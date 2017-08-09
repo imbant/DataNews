@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这里要改掉哟</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="navBar">
+      <div>
+        <button id="menuButton"></button>
+        <span>MENU</span>
+      </div>
+      <div>
+        <span>PLAY VIDEO</span>
+        <button id="videoButton"></button>
+      </div>
+    </div>
+
+    <div id="video">
+      <div id="videoBlock"></div>
+      <button id="closeVideo"></button>
+      <video 
+        src="http://otwi5p3ox.bkt.clouddn.com/%E5%90%88%E6%88%90%201%20-%20%E5%A4%8D%E4%BB%B6.mp4" 
+        controls="controls">
+      </video>
+    </div>
+
+    <div id="menuMain">
+      <button id="menuBackButton"></button>
+      <h1 id="menuLogo">MENU</h1>
+      <div id="menuLists">
+        <div class="menuList">
+          <div class="listName">01.INTRODUCTION</div>
+          <a href="#" class="listContent" id="videoContent">Video</a>
+        </div>
+        <div class="menuList">
+          <div class="listName">02.CITIES &#38; MOVIES</div>
+          <!-- <a href="#" class="listContent">Video</a> -->
+        </div>
+        <div class="menuList">
+          <div class="listName">03.DEPARTMENTS</div>
+          <a href="#" class="listContent">Box office</a>
+          <a href="#" class="listContent">Data report on audience preference</a>
+        </div>
+        <div class="menuList">
+          <div class="listName">04.EXTENTS</div>
+          <a href="#" class="listContent">First-tier city</a>
+          <a href="#" class="listContent">Second-tier city</a>
+          <a href="#" class="listContent">Third-tier city</a>
+        </div>
+        <div class="menuList">
+          <div class="listName">05.CONTACT US</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img 
+            src="http://otwi5p3ox.bkt.clouddn.com/%E9%AD%94%E5%85%BD.jpg" 
+            alt="First slide"
+          >
+        </div>
+        <div class="item">
+          <img 
+            src="http://otwi5p3ox.bkt.clouddn.com/%E7%BE%8E%E5%9B%BD%E9%98%9F%E9%95%BF-2.jpg" 
+            alt="Second slide"
+          >
+        </div>
+        <div class="item">
+          <img 
+            src="http://otwi5p3ox.bkt.clouddn.com/%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4.jpg" 
+            alt="Third slide"
+          >
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div id="searchLine">
+      <h2 id="searchName">CITIES &#38; MOVIES</h2>
+      <div id="searchIcon"></div>
+      <div id="searchDescribe">
+        Enter your city to find information about films 
+        Indicating audience preference.
+      </div>
+      <input type="text" placeholder="Name of city" id="searchInput">
+      <!-- <button type="button" id="searchButton">SEARCH</button> -->
+      <button 
+        class="modalButton" 
+        data-toggle="modal" 
+        data-target="#searchModal" 
+        id="searchButton"
+      >
+        SEARCH
+      </button>
+      <!-- 模态框（Modal） -->
+      <div 
+        class="modal fade" 
+        id="searchModal" 
+        tabindex="-1" 
+        role="dialog" 
+        aria-labelledby="myModalLabel" 
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button 
+                type="button" 
+                class="close" 
+                data-dismiss="modal" 
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                Cities
+              </h4>
+            </div>
+            <div class="modal-body">
+              <img 
+                src="http://otwi5p3ox.bkt.clouddn.com/%E5%8C%97%E4%BA%AC.bmp" 
+                alt="cityDataImg" 
+                id="cityDataImg"
+              >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+              </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+
+
+
+    <div id="newsDescription">
+      <h1 id="descriptionTitle">
+        <span class="white">Box</span> office
+      </h1>
+      <p id="descriptionDate" class="white">Feb. 2017- Aug. 2017</p>
+      <div id="descriptionBlock">
+        <div>
+          <p>General report about audience preference towards movies from different cities. Containing visualized data.</p>
+        </div>
+      </div>
+      <button 
+        class="modalButton" 
+        data-toggle="modal" 
+        data-target="#descriptionModal" 
+        id="descriptionButton"
+      >
+        ——VIEW DETAILS
+      </button>
+      <!-- 模态框（Modal） -->
+      <div 
+        class="modal fade" 
+        id="descriptionModal" 
+        tabindex="-1" 
+        role="dialog" 
+        aria-labelledby="myModalLabel" 
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button 
+                type="button" 
+                class="close" 
+                data-dismiss="modal" 
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                Database sources and data analysis solutions
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                本網站所呈現的數據分析，基於極海網站提供的《數據新聞比賽-影院票房數據》數據資料。數據處理過程如下：
+              </p>
+              <ol>
+                <li>以RICHARD MALTBY著作《HOLLYWOOD CINEMA》中的電影分類為指導，參考“中國電影網”電影分類，將數據庫中所有電影進行分類整合。</li>
+                <li>根據《中國城市新分級名單》，將全國城市分成第壹二三四五線不同層級</li>
+                <li>利用“開放街道地圖網站”（https://www.openstreetmap.org）開放的 API，基於 Node.js 腳本語言，將影院名稱和城市壹壹對應，並整合到不同層級城市分類中</li>
+                <li>計算某壹類型影片票房占該類城市總票房的比例</li>
+                <li>計算各個城市各類影片在城市總票房內的占比</li>
+                <li>對結果進行分析，得出結論</li>
+              </ol>
+              <p>
+                在原始數據中，電影院的位置信息裏沒有明確指明城市，所有城市和電影院的對應信息都是通過利用開放街道地圖網站的 API，使用腳本程序每 300 毫秒發送壹個 HTTP請求的方法，來自動將所有經、緯度信息轉換為壹個包含地址坐標的 HTML 代碼的字符串，再從字符串中嘗試解析城市信息。由於字符串的格式並不統壹，以及 300 毫秒/次的 HTTP 請求可能對開放街道地圖網站的服務器產生不利影響，導致網站拒絕腳本程序的 HTTP 請求。因此數據可能存在以下誤差：
+              </p>
+              <ol>
+                <li>極少影院的經緯度信息無法轉化為有效的城市信息，因此最終數據中缺少這部分影院的數據。</li>
+                <li>極少無用信息混入有效信息之中。</li>
+              </ol>
+
+              <hr>
+
+              <p>
+                The data presented by this website is based on the "Data News Contest - Cinema Box Office Data" provided by the Geo Hey.The data processing is as follows:
+              </p>
+              <ol>
+                <li>
+                  Use RICHARD MALTBY's book "HOLLYWOOD CINEMA" in the classification of the film as a guide, referring to the "Chinese film network" movie classification
+                </li>
+                <li>
+                  According to the "China City new grading list", the national city will be divided into the first two three four five different levels.
+                </li>
+                <li>
+                  Using the open street map website (https://www.openstreetmap.org) API, based on the Node.js scripting language, match the theater name and the city one by one correspondence, and integrated into different levels of urban classification.
+                </li>
+                <li>
+                  Calculate the ratio of a certain type of film box office to the total box office of the city.
+                </li>
+                <li>
+                  Calculate the proportion of various cities in the city's total box office.
+                </li>
+                <li>
+                  Analyze the results and conclude.
+                </li>
+              </ol>
+              
+              <p>In the original data, the cinema location information does not specify the city.All city and cinema correspondence information is through the use of open street map website API. Use the Node.js to send an HTTP request every 300 milliseconds to automatically convert all latitude and longitude information to a string containing the HTML code of the address coordinates, and then try to parse the city information from the string. Because the string format is not uniform, and 300 ms / time HTTP requests may adversely affect the website's server, resulting in the website rejects the HTTP request from the Node.js. So the data may have the following error:</p>
+              <ol>
+                <li>
+                  Very few cinematic latitude and longitude information can not be converted into effective city information, so the final data is missing this part of the cinema data.
+                </li>
+                <li>
+                  very few useless information is mixed with valid information.
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+              </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+
+    <div id="dataReport">
+      <h1 id="dataReportTitle">
+        <span class="white">Data </span>report on <span class="white">audie</span>nce preference
+      </h1>
+      <div id="dataReportBlock">
+        <div>
+          <p>Statement of our research &#38; recommendations.</p>
+        </div>
+      </div>
+      <button 
+        class="modalButton" 
+        data-toggle="modal" 
+        data-target="#reportModal" 
+        id="reportButton"
+      >
+        ——VIEW DETAILS
+      </button>
+      <!-- 模态框（Modal） -->
+      <div 
+        class="modal fade" 
+        id="reportModal" 
+        tabindex="-1" 
+        role="dialog" 
+        aria-labelledby="myModalLabel" 
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button 
+                type="button" 
+                class="close" 
+                data-dismiss="modal" 
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                Statement of our research &#38; recommendations.
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                電影最早是因為19世紀美國國家生活水平上升，緊接著大眾需要而誕生的娛樂產物。它是壹種綜合的現代藝術，亦正如藝術本身，有著復雜而繁多的科系，電影世界裏有很多不同類型的電影，也有很多種電影的分類方法。本研究以RICHARD MALTBY著作《HOLLYWOOD CINEMA》中的電影分類為指導，參考“中國電影網”電影分類，將數據庫中所有電影進行分類整合。
+              </p>
+              <p>
+                通過整理和分析《2016年（2月至8月）電影票房分布》數據，同時結合中國城市層級劃分，將影片類型、票房數據與城市層級對應起來，發現不同線級城市受眾對選擇電影存在偏好。從總體上看，觀眾對於電影類型的偏好程度與城市經濟發展水平成正相關。壹線城市觀眾偏好最明顯，並且兩級分化嚴重。懸疑片排名第二卻和動作片占比相差42.69%，但與其他類型電影實力相近。到了二三線城市，觀眾偏好程度減弱，但占據前三地位的奇幻片、動作片和懸疑片均包攬了67%的票房。在其他線城市中，各類型電影幾乎平分秋色。
+              </p>
+              <p>
+                通過對於電影偏好現象分析，我們試提供電影投放和宣傳建議。
+              </p>
+
+              <p>
+                從整體上看，動作片和懸疑片成為票房贏家，占據了第壹、二、三線城市票房前三的地位，其中除二線城市外，動作片幾乎成為全國觀眾最喜歡的影片類型。在壹線城市中動作片更是以54%的絕對優勢占比，碾壓其他所有類型電影。這壹現象並非2016年獨有，根據《藝恩2015-2016年中國電影產業研究報告》顯示，在2015類型年度票房贏家就為動作片，占年度票房比例接近30%，比2014年提升6%。這也向電影制作商們發出信號，動作類電影為近三年的熱門電影類型，發展前景依然樂觀。
+              </p>
+              <p>
+                而懸疑片卻沒有那麽好運，雖然排名仍前十之內，卻在四五線城市的排名中持續走低。
+              </p>
+              <p>
+                愛情片和警匪片在全國範圍內都有比較穩定的觀眾群體，雖然在不同線級中排名有所波動，但依然堅挺的站在10名圈內。與愛情片內容相似度較高的青春片，似乎只是曇花壹現，雖然新片不斷，評分和排名卻遠沒有當年火熱時期的輝煌，青春牌，還是要慎打才可以。
+              </p>
+              <p>
+                從地區特色上看，對於奇幻片的偏好，各地區差異明顯。除了在二線城市以32.84%的占比獲得第壹名之外，在其他各線城市的排名並不樂觀，甚至在五線城市中險些跌出前十。在四線、五線城市中，愛情類電影比較賣座，和它相類似的還有劇情片、喜劇片。在這部分城市中，輕松幽默的電影風格更容易吸引受眾。
+              </p>
+              <p>
+                前面提到的大多是大眾的電影類型，多是為青年或者成年人量身打造。接下來的電影這類就略顯小眾。兒童電影，壹般壹動畫電影的形式呈現。雖然每年上映的影片很多，國產片高達95%以上。在7個月內就有部32電影上映，然而票房占比卻不高，平均占比4.43%。看來國產動畫電影的掘起之路還很漫長。
+              </p>
+              <p>            
+                對於電影宣傳來說，經驗告訴我們要將重點放到壹線城市。這裏經濟發達，消費能力強，並且有更多的意見領袖，對於電影口碑和票房影響巨大。但通過對於受眾電影偏好分析，我們發現，在壹線城市中觀眾的偏好程度比較深，似乎已經形成了相對固定的選擇。對於多種類型的新片宣傳來說，效果可能不明顯。反觀二三線城市，占據了人口的絕對優勢。同時，這部分觀眾對於電影類型沒有明確的固定的好惡，可塑性很強。同時，較之壹線城市，在二三線城市的宣傳成本比較少，也就是說在花費同樣數量的宣傳經費，在二三線城市宣傳的範圍更廣。因此在進行電影宣傳時，將重心移至這裏可能會收到良好的效果。
+              </p>
+              <p>
+                綜上，我們提出以下建議：
+              </p>
+              <p>
+                第壹，對於快節奏電影，如動作片 、懸疑片；在前期宣傳過程中制作不同風格的預告片，投放到不同地區。針對壹線城市的強烈偏好，設計快節奏多鏡頭視覺沖擊力強的預告片，定制投放。
+              </p>
+              <p>
+                第二，將電影宣傳的重點移至二三線城市，開展豐富的線下活動
+              </p>
+              <p>
+                第三，適當延長愛情片、劇情片、在四線、五線城市的上時長
+              </p>
+              <p>
+                第四，減少青春片的數量，提高質量；投身於國產兒童動畫電影的制作
+              </p>
+
+              <hr>
+
+              <p>
+                The film was first because of the 19th century American national living standards rise, followed by the public needs of the birth of the entertainment products. It is a combination of modern art, as well as the art itself, has a complex and numerous department, the film world has many different types of movies and many kinds of film classification method. In this study, we use RICHARD MALTBY’s book "HOLLYWOOD CINEMA" in the classification of the film as a guide, refer to the "Chinese film network" movie classification, to classify and integrate films of the database. <br>
+              </p>
+
+              <p>
+                By arranging and analyzing the data of "Box Office Distribution in 2016 (February to August)", the paper combined with the urban level of China, the film type, the box office data and the urban level corresponding to each other and found that different line of urban audience preference for film genres. On the whole, the audience's preference for the type of film is positively related to the level of urban economic development. First-tier cities have the most obvious audience preference, and the two-tier differentiation is serious. Suspense film ranked second and Action film accounted for a difference of 42.69%, but similar to other types of film strength. To the second and third tier cities, the audience reduced the degree of preference, but occupy the top three status of Fantasy films, Action films and Suspense films are swept 67% of the box office. In other lines of the city, the various types of movies are almost evenly divided.
+              </p>
+              <p>
+                Through the analysis of the film preferences, we try to supply suggestion on marketing and promotion.
+              </p>
+
+              <p>
+                On the whole, Action as well as Thriller films have been the champion, ranking in top 3 nation-wide. Besides, action movie is nearly the most favourite movies all over China, except for the second-tier city. It conquers 54% of box office in the first-tier city.,rolling all other types of movies. This phenomenon is not unique in 2016, according to "Entgroup 2015 China Film Industry Research Report" ,it accounts for the proportion of the annual box office close to 30%, up 6%,which is also a signal to the filmmakers that Action movies are for nearly three years of popular film types,and the development prospects are still optimistic.
+              </p>
+              <p>
+                While the Suspense film is not so good luck, although the rankings are still within the top ten, but in the four five-tier cities in the ranking continued to decline. <br>
+              </p>
+
+              <p>
+                Romance and Crime films in the country have a relatively stable audience groups, although the rankings in different levels fluctuated, but still strong standing in 10 circles. And Young Romance’s success is short-lived, though having similar content with romance film . Its public praise and rank are far less than its peak in 2012-2015. <br>
+              </p>
+
+              <p>
+                From the regional characteristics point of view, for the Fantasy film preferences, the regional differences significantly. In addition to second-tier cities to 32.84% of the share of the first place, in other lines of the city's ranking is not optimistic, even in the five-tier cities almost out of the top ten In the four-lane, five-tier cities, Romance movies are more popular, as well as the drama, comedy. In this part of the city,the relaxed and humorous style of the film is more likely to attract the audience. <br>
+              </p>
+
+              <p>
+                Most of the above mentioned is the mass of the film type, mostly for young people or adults tailored. The next movie is slightly smaller. Children's movies, usually in the form of an animated film. Although the annual release of many films, domestic films up to 95% or more. In 7 months there are 32 films released, but the box office is not high, the average accounted for 4.43%. It seems that the rise of domestic animation film is still very long.
+              </p>
+
+              <p>
+                For the film publicity, experience tells us to focus on first-tier cities, whose economic is developed, and consumptive power is high. Besides, there are more views of the leaders, having a huge impact on the film reputation and box office . But through the analysis of the audience preferences for the audience, we found that in the first-tier cities, the audience's preference is relatively deep, seeming to have formed a relatively fixed choice. For many types of new film promotion, the effect may not be obvious. In contrast to the second and third tier cities, occupies the absolute superiority of the population. At the same time, this part of the audience for the film type is not clear fixed good and bad, and plasticity is very strong. Meanwhile, compared with the first-tier cities, in the second and third tier cities, the cost of publicity is relatively small, that is to spend the same amount of publicity funds in the second and third tier cities to promote a wider range of areas So in the film publicity, the focus will be moved here may receive good results. <br>
+              </p>
+
+              <p>
+                In summary, we make the following recommendations:
+              </p>
+              <p>
+                First, for fast-paced movies, such as Action films, Suspense films; in the early publicity process to produce different styles of trailers, put to different regions. For the strong preference of first-tier cities, the design of fast-paced multi-lens visual impact of the trailer, custom delivery.
+              </p>
+              <p>
+                Second, the focus of the film propaganda moved to second and third tier cities, to carry out a wealth of offline activities.
+              </p>
+              <p>
+                Third, the appropriate extension of Romance films, drama, in the four lines, five lines of the city on the long.
+              </p>
+              <p>
+                Fourth, reduce the number of Young Romance films, improve quality and engaged in the production of domestic children's animation film.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+              </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+
+    <div id="cityDatas">
+      <div class="cityData" id="firstLine">
+        <div class="block" id="firstBlock"></div>
+        <div class="title" id="firstTitle">First<br>Tier</div>
+        <div class="direction" id="firstDirection">view ^</div>      
+      </div>
+
+      <div class="cityData" id="secondLine">
+        <div class="block" id="secondBlock"></div>
+        <div class="title" id="secondTitle">Second<br>Tier</div>
+        <div class="direction" id="secondDirection">view ^</div>      
+      </div>
+
+      <div class="cityData" id="thirdLine">
+        <div class="block" id="thirdBlock"></div>
+        <div class="title" id="thirdTitle">Third<br>Tier</div>
+        <div class="direction" id="thirdDirection">view ^</div>      
+      </div>
+
+      <div class="cityData" id="fourthLine">
+        <div class="block" id="fourthBlock"></div>
+        <div class="title" id="fourthTitle">Fourth<br>Tier</div>
+        <div class="direction" id="fourthDirection">view ^</div>      
+      </div>
+    </div>
+    
+    <div id="Members">
+      <img src="http://via.placeholder.com/575x575" alt="Members">
+      <p id="Member1">Members</p>
+      <ul>
+        <li>王雨晨</li>
+        <li>李依唯</li>
+        <li>楊晟瑋</li>
+        <li>許明宇</li>
+      </ul>
+      <p id="Member2">同濟大學 | Tongji University</p>
+    </div>
+
+    <div id="backToTop">
+      <a href="#carousel-example-generic">BACK TO TOP</a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
