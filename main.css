@@ -161,9 +161,20 @@ button, input{
 
 .listContent {
   display: block;
-  color: #e6e6e6;
+  color: #bdbdbd;
   text-decoration: none;
   margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.listContent:hover, .listContent:visited, .listContent:active {
+  color: #bdbdbd;
+  text-decoration: none;
+  border: none;
+}
+
+.listContent:hover {
+  color: white;
 }
 
 .carousel {
@@ -214,8 +225,9 @@ button, input{
 #searchLine input {
   outline: none;
   float: right;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 45%;
+  font-size: 21px;
   border: none;
   border-bottom: 2px solid black;
   transition: all 0.3s;
@@ -223,6 +235,13 @@ button, input{
 
 #searchLine input:focus {
   border-bottom: 2px solid rgb(36,252,198);
+}
+
+#searchLine p {
+  color: gray;
+  font-size: 13px;  width: 45%;
+  clear: both;
+  float: right;
 }
 
 #searchButton {
@@ -454,7 +473,7 @@ button, input{
 
 #firstLine {
   background-image: url("http://otwi5p3ox.bkt.clouddn.com/%E4%B8%80%E7%BA%BF%E5%9F%8E%E5%B8%82.bmp");
-  border: 46px solid rgb(57, 251, 199);
+  /* border: 46px solid rgb(57, 251, 199); */
 }
 
 #firstBlock {
@@ -463,7 +482,7 @@ button, input{
 
 #secondLine {
   background-image: url("http://otwi5p3ox.bkt.clouddn.com/%E4%BA%8C%E7%BA%BF%E5%9F%8E%E5%B8%82.bmp");
-  border: 46px solid rgb(245, 219, 0);
+  /* border: 46px solid rgb(245, 219, 0); */
 }
 
 #secondBlock {
@@ -472,7 +491,7 @@ button, input{
 
 #thirdLine {
   background-image: url("http://otwi5p3ox.bkt.clouddn.com/%E4%B8%89%E7%BA%BF%E5%9F%8E%E5%B8%82.bmp");
-  border: 46px solid rgb(255, 163, 65);
+  /* border: 46px solid rgb(255, 163, 65); */
 }
 
 #thirdBlock {
@@ -481,7 +500,7 @@ button, input{
 
 #fourthLine {
   background-image: url("http://otwi5p3ox.bkt.clouddn.com/%E5%9B%9B%E7%BA%BF%E5%9F%8E%E5%B8%82.bmp");
-  border: 46px solid rgb(255, 119, 90);
+  /* border: 46px solid rgb(255, 119, 90); */
 }
 
 #fourthBlock {

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>这里要改掉哟</title>
+    <title>中國電影偏好氣候</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
@@ -35,25 +35,35 @@
       <div id="menuLists">
         <div class="menuList">
           <div class="listName">01.INTRODUCTION</div>
-          <a href="#" class="listContent" id="videoContent">Video</a>
+          <a href="#" class="listContent" id="videoContent">
+            Video
+          </a>
         </div>
         <div class="menuList">
           <div class="listName">02.CITIES &#38; MOVIES</div>
-          <!-- <a href="#" class="listContent">Video</a> -->
+           <a href="#searchLine" class="listContent" id="searchContent">
+             Search
+            </a> 
         </div>
         <div class="menuList">
           <div class="listName">03.DEPARTMENTS</div>
-          <a href="#" class="listContent">Box office</a>
-          <a href="#" class="listContent">Data report on audience preference</a>
+          <a href="#newsDescription" class="listContent" id="boxOfficeContent">
+            Box office
+          </a>
+          <a href="#dataReport" class="listContent" id="reportContent">
+            Data report on audience preference
+          </a>
         </div>
         <div class="menuList">
           <div class="listName">04.EXTENTS</div>
-          <a href="#" class="listContent">First-tier city</a>
-          <a href="#" class="listContent">Second-tier city</a>
-          <a href="#" class="listContent">Third-tier city</a>
+          <a href="#firstTitle" class="listContent" id="firstList">First-tier city</a>
+          <a href="#secondTitle" class="listContent" id="secondList">Second-tier city</a>
+          <a href="#thirdTitle" class="listContent" id="thirdList">Third-tier city</a>
+          <a href="#fourthTitle" class="listContent" id="fourthList">Fourth-tier city</a>
         </div>
         <div class="menuList">
           <div class="listName">05.CONTACT US</div>
+          <a href="#Members" class="listContent" id="MembersContent">First-tier city</a>
         </div>
       </div>
     </div>
@@ -101,8 +111,8 @@
         Enter your city to find information about films 
         Indicating audience preference.
       </div>
-      <input type="text" placeholder="Name of city" id="searchInput">
-      <!-- <button type="button" id="searchButton">SEARCH</button> -->
+      <input type="text" placeholder="Example: 上海/上海市" id="searchInput">
+      <p>The current version only supports provincial capital cities and second-tier(or higher) cities in Chinese.</p>
       <button 
         class="modalButton" 
         data-toggle="modal" 
@@ -434,7 +444,8 @@
     </div>
     
     <div id="Members">
-      <img src="http://via.placeholder.com/575x575" alt="Members">
+      <!-- <img src="http://via.placeholder.com/575x575" alt="Members"> -->
+      <img src="http://otwi5p3ox.bkt.clouddn.com/avatar.jpg" alt="Members">
       <p id="Member1">Members</p>
       <ul>
         <li>王雨晨</li>

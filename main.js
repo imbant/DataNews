@@ -229,6 +229,27 @@ cityList.map((city) => {
 
 $("#searchButton").click(() => {
   let keyWord = $("#searchInput").val().replace('市', '');
+  if(keyWord === '') {
+    alert('Empty city name!');
+    return false;
+  }
   let imgURL = cities[keyWord];
   $("#cityDataImg").attr("src", imgURL);
 })
+
+function addToggle(id) {
+  $('#' + id).click(() => {
+    $('#menuMain').toggle();
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  })
+}
+
+addToggle("searchContent");
+addToggle("boxOfficeContent");
+addToggle("reportContent");
+addToggle("firstList");
+addToggle("secondList");
+addToggle("thirdList");
+addToggle("fourthList");
+addToggle("MembersContent");
