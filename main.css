@@ -78,7 +78,7 @@ button, input{
   position: absolute;
   left: 15%;
   transform: transition(-50%);
-  top: 130px;
+  top: 12%;
   width: 1300px;
   border: 8px solid white;
 }
@@ -285,7 +285,7 @@ button, input{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 768px;
+  width: 40%;
   height: 766px;
   padding: 0 9em 0 6em;
   box-sizing: border-box;
@@ -317,7 +317,7 @@ button, input{
 #descriptionTitle {
   position: relative;
   left: 19%;
-  top: 400px;
+  top: 36%;
   font-size: 7em;
   line-height: 1.05495em;
   font-weight: 700;
@@ -327,8 +327,8 @@ button, input{
 
 #descriptionDate {
   position: relative;
-  left: 366px;
-  top: 400px;
+  left: 20%;
+  top: 36%;
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 600;
@@ -351,7 +351,7 @@ button, input{
 #dataReportTitle {
   position: relative;
   left: 16.4%;
-  top: 400px;
+  top: 36%;
   width: 1050px;
   font-size: 7em;
   line-height: 1.05495em;
@@ -365,7 +365,7 @@ button, input{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 768px;
+  width: 40%;
   height: 766px;
   padding: 0 9em 0 6em;
   box-sizing: border-box;
@@ -402,10 +402,10 @@ button, input{
   font-size: 0.875em;
   color: #999999;
   font-weight: 900;  
-  position: absolute;
   z-index: 11;
-  left: 660px;
-  top: 800px;
+  position: relative;
+  top: -8%;
+  left: 34.5%;
 }
 
 .modal-dialog {
@@ -544,13 +544,13 @@ button, input{
   border-radius: 100%;
   position: relative;
   margin-top: 62.5px;
-  left: 300px;
+  left: 15%;
 }
 
 #Member1 {
   position: relative;
-  left: 700px;
-  top: -500px;
+  left: 37%;
+  top: -72%;
   font-size: 150px;
   font-weight: 900;
   margin-bottom: 4.5rem;
@@ -562,8 +562,8 @@ button, input{
 #Members ul {
   position: relative;
   color: white;
-  left: 1376px;
-  top: -450px;
+  left: 72%;
+  top: -63%;
   list-style-type: none;
   font-size: 30px;
 }
@@ -575,13 +575,14 @@ button, input{
 #Member2 {
   position: relative;
   color: white;
-  left: 1245px;
-  top: -425px;
+  left: 65.3%;
+  top: -60%;
   font-size: 18px;
 }
 
 #backToTop {
-  padding: 50px 0 50px 1500px;
+  padding-top: 30px;
+  height: 15vh;
   color: black;
   font-size: 30px;
 }
@@ -590,6 +591,8 @@ button, input{
   text-decoration: none;
   color: black;
   transition: all 0.3s;
+  float: right;
+  margin-right: 11%;
 }
 
 #backToTop a:hover {
