@@ -207,10 +207,10 @@ function setTitlePosition(line) {
   direction.css('top', block.offset().top + 586 + 'px');
 }
 
-setTitlePosition("first");
-setTitlePosition("second");
-setTitlePosition("third");
-setTitlePosition("fourth");
+// setTitlePosition("first");
+// setTitlePosition("second");
+// setTitlePosition("third");
+// setTitlePosition("fourth");
 
 
 let cities = {};

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatiable" content="ie=Edge,chrome=1"/> 
     <title>中國電影偏好氣候</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,6 +20,7 @@
         <button id="videoButton"></button>
       </div>
     </div>
+    <div id="navBarPlaceHolder"></div>
 
     <div id="video">
       <div id="videoBlock"></div>
@@ -27,6 +29,7 @@
         src="http://otwi5p3ox.bkt.clouddn.com/%E5%90%88%E6%88%90%201%20-%20%E5%A4%8D%E4%BB%B6.mp4" 
         controls="controls">
       </video>
+      <p id="videoTips">如果電影加載較慢，請移步<a href="http://player.youku.com/embed/XMjk2MDA4OTEzMg==">這裏</a>。</p>
     </div>
 
     <div id="menuMain">
@@ -82,14 +85,14 @@
           >
         </div>
         <div class="item">
-          <img 
-            src="http://otwi5p3ox.bkt.clouddn.com/%E7%BE%8E%E5%9B%BD%E9%98%9F%E9%95%BF-2.jpg" 
+          <img  
+            src="http://otwi5p3ox.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC.jpg"
             alt="Second slide"
           >
         </div>
         <div class="item">
           <img 
-            src="http://otwi5p3ox.bkt.clouddn.com/%E7%99%BE%E9%B8%9F%E6%9C%9D%E5%87%A4.jpg" 
+            src="http://otwi5p3ox.bkt.clouddn.com/%E4%BC%A6%E6%95%A6%E9%99%B7%E8%90%BD1.jpg" 
             alt="Third slide"
           >
         </div>
@@ -419,33 +422,34 @@
 
     <div id="cityDatas">
       <div class="cityData" id="firstLine">
-        <div class="block" id="firstBlock"></div>
         <div class="title" id="firstTitle">First<br>Tier</div>
         <div class="direction" id="firstDirection">view ^</div>      
       </div>
+      <div class="block" id="firstBlock"></div>
 
       <div class="cityData" id="secondLine">
-        <div class="block" id="secondBlock"></div>
         <div class="title" id="secondTitle">Second<br>Tier</div>
         <div class="direction" id="secondDirection">view ^</div>      
       </div>
+      <div class="block" id="secondBlock"></div>
 
       <div class="cityData" id="thirdLine">
-        <div class="block" id="thirdBlock"></div>
         <div class="title" id="thirdTitle">Third<br>Tier</div>
         <div class="direction" id="thirdDirection">view ^</div>      
       </div>
+      <div class="block" id="thirdBlock"></div>
 
       <div class="cityData" id="fourthLine">
-        <div class="block" id="fourthBlock"></div>
         <div class="title" id="fourthTitle">Fourth<br>Tier</div>
         <div class="direction" id="fourthDirection">view ^</div>      
       </div>
+      <div class="block" id="fourthBlock"></div>
     </div>
     
     <div id="Members">
       <!-- <img src="http://via.placeholder.com/575x575" alt="Members"> -->
-      <img src="http://otwi5p3ox.bkt.clouddn.com/avatar.jpg" alt="Members">
+      <!-- <img src="http://otwi5p3ox.bkt.clouddn.com/avatar.jpg" alt="Members">  -->
+      <img src="./avatar.jpg" alt="Members"> 
       <p id="Member1">Members</p>
       <ul>
         <li>王雨晨</li>
@@ -457,7 +461,7 @@
     </div>
 
     <div id="backToTop">
-      <a href="#carousel-example-generic">BACK TO TOP</a>
+      <a href="#navBarPlaceHolder">BACK TO TOP</a>
     </div>
 
     <script src="main.js"></script>
